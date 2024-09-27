@@ -1,4 +1,4 @@
-package com.example.dam2_jetpreference.viewmodel
+package com.example.dam2_jetpreference.adapter
 
 import android.view.View
 import android.widget.TextView

@@ -1,4 +1,4 @@
-package com.example.dam2_jetpreference.viewmodel
+package com.example.dam2_jetpreference.adapter
 
 import android.view.LayoutInflater
 import android.view.ViewGroup
@@ -19,5 +19,11 @@ class TaskAdapter(private val onTaskClick: (String) -> Unit): RecyclerView.Adapt
     override fun onBindViewHolder(holder: TaskViewHolder, position: Int) {
         val item = tasks[position]
         holder.bind(item)
+        holder.itemView.setOnClickListener{onTaskClick(item)}
+    }
+
+    fun updateTask(newTasks: List<String>){
+        this.tasks = newTasks.toMutableList()
+        notifyDataSetChanged()
     }
 }
