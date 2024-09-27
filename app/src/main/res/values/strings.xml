@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">DAM2_JetPreference</string>
+    <string name="et_taskInput">Ingrese la tarea</string>
+    <string name="btn_addTask">Add task</string>
 </resources>
